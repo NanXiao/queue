@@ -45,6 +45,6 @@ func TestDequeue(t *testing.T)  {
 		t.Error("Queue must have one element")
 	}
 	if q.Head().(int) != 2 {
-		t.Error("The head be 2")
+		t.Error("The head must be 2")
 	}
 }
