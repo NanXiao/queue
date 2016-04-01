@@ -12,7 +12,7 @@ func (q *Queue) Len() int {
 	return len(q.queue)
 }
 
-func (q *Queue) Enqueue(v interface{})  {
+func (q *Queue) Enqueue(v interface{}) {
 	q.queue = append(q.queue, v)
 }
 

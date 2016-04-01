@@ -2,21 +2,21 @@ package queue
 
 import "testing"
 
-func TestNewQueue(t *testing.T)  {
+func TestNewQueue(t *testing.T) {
 	q := New()
 	if q == nil {
 		t.Error("Queue must not be nil")
 	}
 }
 
-func TestEmptyQueue(t *testing.T)  {
+func TestEmptyQueue(t *testing.T) {
 	var q Queue
-	if q.Len() != 0 || q.Dequeue() != nil || q.Head() != nil{
+	if q.Len() != 0 || q.Dequeue() != nil || q.Head() != nil {
 		t.Error("Queue must have no element")
 	}
 }
 
-func TestEnqueue(t *testing.T)  {
+func TestEnqueue(t *testing.T) {
 	q := New()
 
 	q.Enqueue(1)
@@ -28,7 +28,7 @@ func TestEnqueue(t *testing.T)  {
 	}
 }
 
-func TestDequeue(t *testing.T)  {
+func TestDequeue(t *testing.T) {
 	q := New()
 
 	q.Enqueue(1)
